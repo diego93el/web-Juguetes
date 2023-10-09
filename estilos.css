@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+}
+
+body{
+    padding-top: 15%;
+    padding-bottom: 6%;
+    background-color: beige;
+    min-height: 100vh;
+    position: relative;
+   
+}
+body a{
+    color: black;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #8fcaca;
+    box-shadow:
+  4.7px 0.5px 6px #ecd5e3,
+  21px 2px 26px #cbaacb
+;
+z-index: 100;
+  
+
+}
+.logo img{
+    width: 8%;
+    height: 8%;
+}
+.logo{
+    font-size: 1.2em;
+    color: whitesmoke;
+    display: flex;
+}
+
+.navigation{
+    position:fixed;
+    z-index: 1000;
+    top: 12%;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation a{
+    font-size: .8em;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    text-align: center;
+    margin: 5%;
+}
+
+.cajaMock1,.cajaMock2,.cajaMock3,.cajaMock4,.cajaMock5 {
+    width: 15%;
+    background-color: #8fcaca;
+    border-right: 1px solid;
+    border-radius: 6px;
+    box-shadow:
+  5.5px 2.8px 0px #cbaacb,
+  13.3px 6.7px 0px #ecd5e3
+  ;
+}
+
+.containerSlider{
+    position: relative;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    padding: 0px 40px;
+}
+.leftSlider, .rightSlider {
+       cursor: pointer;
+       width: 5%;
+}
+.leftSlider img, .rightSlider img{
+    width: 100%;
+}
+.screenSlider{
+   border: 1px inset;
+    border-radius: 2px;
+   
+}
+.screenSlider img{
+    justify-content: center;
+    width: 100%;
+}
+.contenedor{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.contenedor a{
+    text-decoration: none;
+}
+.contenedorJuguetes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+.cajaFlex, .cajaFlex2, .cajaFlex3, .cajaFlex4,.cajaFlex5,.cajaFlex6{
+    text-align: center;
+    width: 22%;
+    border-right: 0.1px solid black;
+    border-radius: 6px 0px 20px 0;
+    background:linear-gradient(320deg,  #cbaacb,#ecd5e3,whitesmoke) ;
+}
+.cajaFlex2 li{
+    list-style: none;
+}
+.cuestionario{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container,.container2{
+    border-right: 1px solid black;
+    border-radius: 10px;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.container a{
+    position: relative;
+    left: 35%;
+
+}
+.container img{
+    position: relative;
+    left: 10%;
+    width: 1000px;
+}
+.campo {
+    border-bottom: 0.5px solid gray;
+}
+footer{
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    background-color: #8fcaca;
+    border-top:1.5px solid #0d2a3c;
+    text-align: center;
+    
+}
+footer img{
+    width: 6%;
+    height: auto;
+    position: relative;
+    left: 3%;
+}
+footer a{
+    width: 2%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    left: 85%;
+
+}
+@media only screen and (max-width:800px) {
+    *{
+        font-size: 1em;
+    }
+    body{
+        padding-top: 40%;
+    }
+    .logo img{
+        width: 15%;
+    }
+    .cajaMock1,.cajaMock2,.cajaMock3,.cajaMock4,.cajaMock5{
+        width: 40%;
+    }
+    .contenedorJuguetes img{
+        width: 100px;
+}
+.cuestionario{
+    display: flex;
+    justify-content: space-between;
+}
+.container img{
+    width: 500px;
+}.container{
+    margin-bottom: 40px;
+}
+    
+    .leftSlider img, .rightSlider img{
+        width: 20px;
+    }
+    
+}
+@media only screen and (max-width:600px) {
+    *{
+          font-size: .9em;
+    }
+    body{
+        margin-top:  3cm;  
+        
+     }
+    .logo img{
+        width: 30%;
+    }
+    .cajaMock1,.cajaMock2,.cajaMock3,.cajaMock4,.cajaMock5{
+        width: 40%;
+    }
+    .containerSlider{
+        padding-right: 130%;
+        width: 200%;
+        height: auto;
+    }
+    .leftSlider img, .rightSlider img{
+        width: 20px;
+    }
+    .container{
+        margin-bottom: 40px;
+    }
+    .container img{
+        width: 300px;
+    }
+
+    .contenedorJuguetes img{
+             width: 60px;
+    }
+    .footer img{
+        width: 30%;
+        height: auto;
+    }
+    .footer svg {
+        width: 15px;
+        height: auto;
+    }
+}
+
